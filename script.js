@@ -22,7 +22,7 @@ const sectionFour = document.querySelector("#section--four");
 const sectionFive = document.querySelector("#section--five");
 
 const imgContainer = document.querySelectorAll(".img--container");
-const imgLinks = document.querySelectorAll(".img--link");
+const links = document.querySelectorAll(".link");
 
 const nav = document.querySelector("nav");
 const menu = document.getElementById("header--menu--button");
@@ -128,17 +128,18 @@ const colorNames = [
 	"Yellow",
 ];
 
+
+
 //1 - GREETING WORD
 
 const greetingWordList = [
 	"Aloha",
-	"Nin Hao",
+	"Nǐ hǎo",
 	"こんにちは",
 	"Ave",
 	"Merhaba",
 	"Ciao",
-	"sawubona",
-	"a gutn tog",
+	"Sawubona",
 	"Howdy",
 	"Hello",
 	"Hey",
@@ -147,7 +148,7 @@ const greetingWordList = [
 	"Salut",
 	"Guten Tag",
 	"Morning",
-	"Ola",
+	"Hola",
 	"你好",
 	"✋🏼",
 	"Ohayo",
@@ -157,6 +158,22 @@ const greetingWordList = [
 	"Sawasdi Ka",
 	"Dobryy den",
 	"Bwanji",
+	"Konnichiwa",
+	"Olá",
+	"Anyoung",
+	"Ahlan",
+	"Halløj",
+	"Shikamoo",
+	"Hallo",
+	"Cześć",
+	"Namaste",
+	"Shalom",
+	"Hei",
+	"👋🏽",
+
+
+
+
 ];
 
 function randomNumber(min, max) {
@@ -167,6 +184,7 @@ function greetingWordChange() {
 	setInterval(() => {
 		greetingWord.textContent =
 			greetingWordList[randomNumber(0, greetingWordList.length - 1)];
+		greetingWord.style.borderColor = colorNames[randomNumber(0, colorNames.length - 1)];
 	}, 500);
 }
 
@@ -175,9 +193,10 @@ const observer = new IntersectionObserver(
 		entries.forEach((entry) => {
 			if (!entry.isIntersecting) {
 				greetingContainer.style.opacity = "1";
-				body.style.backgroundColor = "#ff0000";
-				gradient.style.background = `linear-gradient(180deg, #ff0000 30%, rgba(255, 255, 255, 0) 100%)`;
-				footer.style.background = `linear-gradient(0deg, #ff0000 30%, rgba(255, 255, 255, 0) 100%)`;
+				let color = colorNames[randomNumber(0, colorNames.length - 1)]
+				// body.style.backgroundColor = color;
+				// gradient.style.background = `linear-gradient(180deg, ${color} 30%, rgba(255, 255, 255, 0) 100%)`;
+				// footer.style.background = `linear-gradient(0deg, ${color} 30%, rgba(255, 255, 255, 0) 100%)`;
 			} else {
 				greetingContainer.style.opacity = "0";
 			}
@@ -195,8 +214,7 @@ greetingWordChange();
 // 2 - SCREENSAVER
 
 const screenSaverBackground = function () {
-	screensaverContainer.style.background =
-		colorNames[randomNumber(0, colorNames.length - 1)];
+	screensaverContainer.style.background = '#F8F8F8';
 };
 
 const showScreensaver = function () {
@@ -219,6 +237,7 @@ function timeNow() {
 const getTime = function () {
 	setInterval(() => {
 		screensaverClock.textContent = timeNow();
+		screensaverClock.style.borderColor = colorNames[randomNumber(0, colorNames.length - 1)];
 	}, 1000);
 };
 
@@ -267,6 +286,7 @@ function scrollPosition(event) {
 	let percentage = (currHeight / totalHeight) * 100; //get a number from 0 - 100
 	position.textContent = `${Math.floor(percentage)}%`;
 	position.style.opacity = "1";
+	position.classList.remove('footer--hand--animate');
 
 	// Set a timeout to run after scrolling ends
 	isScrolling = setTimeout(function () {
@@ -277,6 +297,7 @@ function scrollPosition(event) {
 			position.style.opacity = 1;
 			position.addEventListener("click", scrollToTop, false);
 			position.style.cursor = "pointer";
+			position.classList.add('footer--hand--animate');
 		}
 		// console.log('Scrolling has stopped.');
 	}, 250);
@@ -293,7 +314,7 @@ function changeColourFunction(section, colour1, colour2, colour3) {
 	body.style.color = colour2;
 	gradient.style.background = `linear-gradient(180deg, ${colour1} 30%, rgba(255, 255, 255, 0) 100%)`;
 	footer.style.background = `linear-gradient(0deg, ${colour1} 30%, rgba(255, 255, 255, 0) 100%)`;
-	nav.style.backgroundColor = `${colour3}`;
+	nav.style.background = `linear-gradient(180deg, ${colour3} 90%, rgba(255, 255, 255, 0) 100%)`;
 }
 
 function changeColour(section, colour1, colour2, colour3) {
@@ -314,14 +335,18 @@ function menuLoad(section) {
 	}
 }
 
+// #5510d1
+// const bgColor = '#F8F8F8'
+const bgColor = '#ffffff'
+
 document.addEventListener(
 	"scroll",
 	function (e) {
-		changeColour(sectionOne, "#ffe6e6", "black", "#f82020");
-		changeColour(sectionTwo, "#5510d1", "black", "#1f1f3e");
-		changeColour(sectionThree, "BlanchedAlmond", "black", "#5510d1");
-		changeColour(sectionFour, "MidnightBlue", "white", "#d0d0d0");
-		changeColour(sectionFive, "#ededed", "black", "darkred");
+		changeColour(sectionOne, bgColor, "black", bgColor);
+		changeColour(sectionTwo, bgColor, "black", bgColor);
+		changeColour(sectionThree, bgColor, "black", bgColor);
+		changeColour(sectionFour, bgColor, "black", bgColor);
+		changeColour(sectionFive, bgColor, "black", bgColor);
 		menuLoad(sectionOne);
 	},
 	false
@@ -330,17 +355,41 @@ document.addEventListener(
 //5 - Navigation
 const navList = document.querySelectorAll(".title--menu");
 
+const sectionTitles = document.querySelectorAll('.section--title');
+
+
 function scrollMenu() {
 	navList.forEach((i) => {
 		i.addEventListener("click", function () {
-			eval(i.dataset.section).scrollIntoView({
+			eval(i.dataset.section).scrollIntoView({ //Turn string into variable eval()
 				behavior: "smooth",
 			});
 		});
 	});
 }
 
+function scrollTitles() {
+	sectionTitles.forEach((i) => {
+		i.addEventListener("click", function () {
+			eval(i.dataset.section).scrollIntoView({ //Turn string into variable eval()
+				behavior: "smooth",
+				block: "start",
+			});
+		});
+	});
+}
+
+function scrollToStart() {
+	greetingWord.addEventListener('click', function () {
+		sectionOne.scrollIntoView({ //Turn string into variable eval()
+			behavior: "smooth",
+		});
+	})
+}
+
+scrollToStart();
 scrollMenu();
+scrollTitles();
 
 menu.addEventListener("click", function () {
 	if (nav.style.top != "0vw") {
@@ -363,7 +412,7 @@ function mouseImgOver(e) {
 	if (e.target.dataset.id != undefined) {
 		imgContainer.forEach((value) => {
 			value.children.item(e.target.dataset.id - 1).style.opacity = 1;
-			e.target.style.zIndex = "11";
+			e.target.style.zIndex = "20";
 		});
 	}
 }
@@ -373,7 +422,7 @@ function mouseImgLeave(e) {
 	if (e.target.dataset.id != undefined) {
 		imgContainer.forEach((value) => {
 			value.children.item(e.target.dataset.id - 1).style.opacity = 0;
-			e.target.style.zIndex = "10";
+			e.target.style.zIndex = "3";
 		});
 	}
 }
@@ -383,7 +432,20 @@ document.querySelector("main").addEventListener("mouseout", mouseImgLeave);
 
 //7 - RANDOM COLOURS
 
-imgLinks.forEach(
-	(val) =>
-	(val.style.borderColor = colorNames[randomNumber(0, colorNames.length - 1)])
-);
+links.forEach((val) => (val.style.borderColor = colorNames[randomNumber(0, colorNames.length - 1)]));
+
+const navListLinks = nav.querySelectorAll('.link');
+const titleLinks = document.querySelectorAll('.section--title');
+
+/*
+Iterate through nodelist of <nav> .link elements, store colour link, 
+and then apply it to nodelist titleLinks item at (index)
+
+The nav links and the title links are in the same order - so using index is fine.
+ */
+
+navListLinks.forEach((link, i) => {
+	let colour = link.style.borderColor;
+	titleLinks.item(i).style.borderColor = colour;
+	titleLinks.item(4).style.borderColor = colorNames[randomNumber(0, colorNames.length - 1)];
+})
