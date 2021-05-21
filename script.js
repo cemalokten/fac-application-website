@@ -249,7 +249,7 @@ const hideScreensaver = function () {
 	screensaverContainer.style.opacity = 0;
 	// Timeout used to hide screenSaverContainer after opacity had transitioned to 0
 	// If no Timeout then opacity transition is overridden by visibily changing to hidden
-	setTimeout(() => (screensaverContainer.style.visibility = 'hidden'), 1500);
+	setTimeout(() => (screensaverContainer.style.visibility = 'hidden'), 500);
 };
 
 function timeNow() {
@@ -470,9 +470,13 @@ body.style.color = 'black';
 
 // Click to change the background colour and again to reset it
 // Will reset to default after 10 secs
+let wizardTimeout;
 wizard.addEventListener('click', function () {
+	clearTimeout(wizardTimeout)
 	body.style.backgroundColor != 'rgb(248, 248, 248)'
 		? (body.style.backgroundColor = 'rgb(248, 248, 248)')
 		: (body.style.backgroundColor = randomColour());
-	setTimeout(() => body.style.backgroundColor = 'rgb(248, 248, 248)', 10000)
+	wizardTimeout = setTimeout(() => body.style.backgroundColor = 'rgb(248, 248, 248)', 10000)
 });
+
+
