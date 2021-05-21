@@ -221,12 +221,16 @@ greetingWordChange();
 const observer = new IntersectionObserver(
 	(entries) => {
 		entries.forEach((entry) => {
-			// When <main> is not intersecting(visible) - show greeting word
+			// When <main> is not intersecting(visible) - show greeting word and enable click
 			if (!entry.isIntersecting) {
 				greetingContainer.style.opacity = '1';
-				// When <main> is intersecting(visible) - hide greeting word
+				greetingContainer.style.pointerEvents = 'auto';
+				// When <main> is intersecting(visible) - hide greeting word and disable pointer events
+				
 			} else {
 				greetingContainer.style.opacity = '0';
+				greetingContainer.style.pointerEvents = 'none';
+				
 			}
 		});
 	},
