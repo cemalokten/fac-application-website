@@ -1,3 +1,10 @@
+/* ===============================================================
+ * Founders and Coders Application Javascript
+ * Author:  Cemal Okten
+ * Github: https://github.com/cemalokten/fac-application-website
+ * Language: CSS
+================================================================== */
+
 :root {
 	--grey: #F8F8F8;
 }
@@ -10,7 +17,8 @@
 }
 
 * {
-	box-sizing: border-box;
+	/* Fit content within frame of window */
+	box-sizing: border-box; 
 	margin: 0;
 	padding: 0;
 }
@@ -23,11 +31,6 @@ main {
 	font-size: 2.2vw;
 	font-family: 'Lab Mono Web';
 	line-height: 4vw;
-
-	transition: z-index 0.3s ease-in-out;
-	-webkit-transition: z-index 0.3s ease-in-out;
-	-moz-transition: z-index 0.3s ease-in-out;
-	-o-transition: z-index 0.3s ease-in-out;
 }
 
 body {
@@ -69,7 +72,7 @@ header {
 	flex-direction: row-reverse;
 	justify-content: right;
 	gap: 20px;
-	width: 100%;
+	width: 100vw;
 	padding-left: 6vw;
 	padding-right: 6vw;
 	margin-top: 3.8vw;
@@ -130,6 +133,8 @@ a:hover {
 	-o-transition: color 0.3s ease-in-out;
 }
 
+
+
 #header--gradient {
 	position: fixed;	
 	z-index: 4;
@@ -142,16 +147,14 @@ a:hover {
 
 #header--menu--button {
 	z-index: 14;
-
 	cursor: pointer;
+	pointer-events: auto;
 	opacity: 0;
+
 	transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 	-webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 	-moz-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 	-o-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-
-	pointer-events: auto;
-
 }
 
 #footer--scroll--position {
@@ -313,8 +316,6 @@ img {
 	max-width: 88vw;
 	max-height: 80vh;
 
-	
-
 	opacity: 1;
 	border-radius: 2vw;
 }
@@ -328,7 +329,6 @@ img {
 
     width: 100vw;
     height: 100vh;
-    
 }
 
 .img--container .img--display {
