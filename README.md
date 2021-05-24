@@ -90,10 +90,7 @@ This website is my (Cemal Okten) application for the Founders and Coders (FAC) 2
 - Screensaver with time and location
 - Keyboard down and up to jump to next section
 
-**✏  Wireframe sketches**
-
-![](https://www.loosecamel.com/fac/sketches-3.gif)
 
 **🖼 Concept Layouts**
 
-![](https://www.loosecamel.com/fac/concept-1.gif)
+![](https://www.loosecamel.com/fac/1.png)
