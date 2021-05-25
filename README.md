@@ -6,16 +6,16 @@ It gave me an opportunity to put into words why I want to learn more about codin
 
 ## 📔 Contents
 
-- [⌚ Project Timeline](#-⌚-project-timeline)
-- [📃 Brief](#-📃-brief)
-- [💡 Design](#-💡-design)
-- [🦺 Testing](#-🦺-testing)
-- [✔ Accessibility](#-✔-accessibility)
-- [📷 Image usage rights](#-📷-image-usage-rights)
-- [🔎 Brief Review](#-🔎-brief-review)
-- [📚 What I learnt](#-📚-what-i-learnt)
-- [⏳ Things I would change](#-⏳-things-i-would-change)
-- [🚙 Reflections and What Next](#-🚙-reflections-and-what-next)
+- [⌚ Project Timeline](#-project-timeline)
+- [📃 Brief](#-brief)
+- [💡 Design](#-design)
+- [🦺 Testing](#-testing)
+- [✔ Accessibility](#-accessibility)
+- [📷 Image usage rights](#-image-usage-rights)
+- [🔎 Brief Review](#-brief-review)
+- [📚 What I learnt](#-what-i-learnt)
+- [⏳ Things I would change](#-things-i-would-change)
+- [🚙 Reflections and What Next](#-reflections-and-what-next)
 
 ---
 
@@ -216,6 +216,9 @@ Through the creation of this site I learnt the basics of the following:
 - CSS animations
 - CSS transitions
 - Viewport width and viewport height
+- Clone, push and fetch from GitHub
+- How to test a website
+- Deploy a website on GitHub
 - I also learnt that I really love coding ❤
 
 ## ⏳ Things I would change
@@ -224,11 +227,13 @@ Through the creation of this site I learnt the basics of the following:
 - Use RGB values instead of colour names for a wider range of random colours
 - Pre-load images, maybe with Greeting words being a preload screen
 - Include keyboard navigation
+- Make code DRY
+- Use less event listeners / combine them to increase performance
 - More testing on different browsers and devices
 
 ## 🚙 Reflections and What Next
 
 - I am proud of myself and pleased to have been part of the application process
-- I am now more motivated to learn to code
+- I am now even more motivated to learn to code
 - I would love to learn React and Node
 - I would like my next project to be something to help the world
