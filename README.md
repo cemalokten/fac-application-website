@@ -4,16 +4,16 @@ This read-me documents my application website for the Founders and Coders (FAC) 
 
 ## 📔 Contents
 
-- [⌚ Project Timeline](#--project-timeline)
-- [📃 Brief](#---brief)
-- [💡 Design](#---design)
-- [🦺 Testing](#---testing)
-- [✔ Accessibility](#--accessibility)
-- [📷 Image usage rights](#---image-usage-rights)
-- [🔎 Brief Review](#---brief-review)
-- [📚 What I learnt](#---what-i-learnt)
-- [⏳ Things I would change](#--things-i-would-change)
-- [🚙 Reflections and What Next](#---reflections-and-what-next)
+- [⌚ Project Timeline](#-⌚-project-timeline)
+- [📃 Brief](#-📃-brief)
+- [💡 Design](#-💡-design)
+- [🦺 Testing](#-🦺-testing)
+- [✔ Accessibility](#-✔-accessibility)
+- [📷 Image usage rights](#-📷-image-usage-rights)
+- [🔎 Brief Review](#-🔎-brief-review)
+- [📚 What I learnt](#-📚-what-i-learnt)
+- [⏳ Things I would change](#-⏳-things-i-would-change)
+- [🚙 Reflections and What Next](#-🚙-reflections-and-what-next)
 
 ---
 ## ⌚ Project Timeline
@@ -42,7 +42,6 @@ This read-me documents my application website for the Founders and Coders (FAC) 
 - Write documentation
 - Deploy to GitHub pages
 
----
 
 ## 📃 Brief
 
@@ -69,8 +68,6 @@ This read-me documents my application website for the Founders and Coders (FAC) 
 - Tells a story with words and images
 - Playful and colourful design
 - Loads quickly
-
----
 
 ## 💡 Design
 
@@ -131,7 +128,7 @@ The final deployed site includes:
 <img src="images/readme/deployed-site-desktop.jpg" alt="Screenshots of deployed website on desktop" width="600px" style="border: 5px solid darkgreen; border-radius: 2vw;">
 
 <img src="images/readme/deployed-site-mobile.jpg" alt="Screenshots of deployed website on mobile" width="600px" style="border: 5px solid darkgreen; border-radius: 2vw;">
----
+
 
 ## 🦺 Testing
 
@@ -157,7 +154,6 @@ One of the factors effecting performance was the size of the animated GIFs. I wa
 
 <img src="google-lighthouse-results.png" alt="Google Chrome Lighthouse test results" width="600px" style="border: 5px solid darkgreen; border-radius: 2vw;">
 
----
 
 ## ✔ Accessibility
 I have tried to design the website with accessibility in mind:
@@ -171,7 +167,6 @@ Things that could improve accessibility:
 - Include option to use keyboard navigation
 - Fix navigation in place
 
----
 
 ## 📷 Image usage rights
 All images on the site are owned by myself or have a creative commons license which allows free use and distribution. 
@@ -205,7 +200,6 @@ Animated GIFs are from Giphy and follow their terms and conditions of use.
 - ✅ Playful and colourful design
 - ✅ Loads quickly
 
----
 
 ## 📚 What I learnt
 
@@ -229,9 +223,6 @@ Through the creation of this site I learnt the basics of the following:
 - Viewport width and viewport height
 - I also learnt that I really love coding ❤
 
----
-
-
 ## ⏳ Things I would change
 
 - Code alternative for `scrollIntoView()` to work with Safari
@@ -239,8 +230,6 @@ Through the creation of this site I learnt the basics of the following:
 - Pre-load images, maybe with Greeting words being a preload screen
 - Include keyboard navigation
 - More testing on different browsers and devices
-
----
 
 ## 🚙 Reflections and What Next
 
