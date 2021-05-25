@@ -8,7 +8,7 @@ It gave me an opportunity to put into words why I want to learn more about codin
 
 - [⌚ Project Timeline](#-project-timeline)
 - [📃 Brief](#-brief)
-- [💡 Design](#-design)
+- [💡 Design  and development](#-design-and-development)
 - [🦺 Testing](#-testing)
 - [✔ Accessibility](#-accessibility)
 - [📷 Image usage rights](#-image-usage-rights)
@@ -71,7 +71,7 @@ It gave me an opportunity to put into words why I want to learn more about codin
 - Playful and colourful design
 - Loads quickly
 
-## 💡 Design
+## 💡 Design and development
 
 **📝 Feature and functionality ideas**
 
