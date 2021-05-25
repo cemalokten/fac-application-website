@@ -109,8 +109,7 @@ A more developed design which includes:
 - Image over text
 
 <img src="images/readme/concept-layout.jpg" alt="Developed initial ideas with more detail and colour" width="600px" style="border: 5px solid darkred; border-radius: 2vw; ">
-<br>
-<br>
+
 
 **🏁 Deployed site**
 
