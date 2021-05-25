@@ -16,6 +16,7 @@ This read-me documents my application website for the Founders and Coders (FAC) 
 - [🚙 Reflections and What Next](#-🚙-reflections-and-what-next)
 
 ---
+
 ## ⌚ Project Timeline
 **🎨 Week 1 - Content and Design**
 
@@ -41,7 +42,6 @@ This read-me documents my application website for the Founders and Coders (FAC) 
 - Test site on desktop and mobile
 - Write documentation
 - Deploy to GitHub pages
-
 
 ## 📃 Brief
 
@@ -91,9 +91,7 @@ While working my way through freeCodeCamp and other resources I had ideas about 
 
 Early wire-frame sketch ideas, including some of the features and functionality above.
 
-<img  src="images/readme/sketch-layout.jpg" alt="Wire-frame sketches of initial ideas" width="600px" style="border: 5px solid darkblue; border-radius: 2vw; ">
-<br><br>
-
+<img  src="images/readme/sketch-layout.jpg" alt="Wire-frame sketches of initial ideas" width="600px">
 
 **🖌 Concept Layouts**
 
@@ -108,7 +106,7 @@ A more developed design which includes:
 - Mobile navigation and font size
 - Image over text
 
-<img src="images/readme/concept-layout.jpg" alt="Developed initial ideas with more detail and colour" width="600px" style="border: 5px solid darkred; border-radius: 2vw; ">
+<img src="images/readme/concept-layout.jpg" alt="Developed initial ideas with more detail and colour" width="600px">
 
 
 **🏁 Deployed site**
@@ -124,13 +122,12 @@ The final deployed site includes:
 - Menu ☰ button and X to close
 - Larger text size and full screen navigation on mobile
 
-<img src="images/readme/deployed-site-desktop.jpg" alt="Screenshots of deployed website on desktop" width="600px" style="border: 5px solid darkgreen; border-radius: 2vw;">
+<img src="images/readme/deployed-site-desktop.jpg" alt="Screenshots of deployed website on desktop" width="600px">
 
-<img src="images/readme/deployed-site-mobile.jpg" alt="Screenshots of deployed website on mobile" width="600px" style="border: 5px solid darkgreen; border-radius: 2vw;">
+<img src="images/readme/deployed-site-mobile.jpg" alt="Screenshots of deployed website on mobile" width="600px">
 
 
 ## 🦺 Testing
-
 
 **🖱 Compatibility**
 
@@ -153,7 +150,6 @@ One of the factors effecting performance was the size of the animated GIFs. I wa
 
 <img src="google-lighthouse-results.png" alt="Google Chrome Lighthouse test results" width="600px" style="border: 5px solid darkgreen; border-radius: 2vw;">
 
-
 ## ✔ Accessibility
 I have tried to design the website with accessibility in mind:
 - All images have descriptive alt-text
@@ -166,8 +162,8 @@ Things that could improve accessibility:
 - Include option to use keyboard navigation
 - Fix navigation in place
 
-
 ## 📷 Image usage rights
+
 All images on the site are owned by myself or have a creative commons license which allows free use and distribution. 
 
 Animated GIFs are from Giphy and follow their terms and conditions of use.
@@ -190,7 +186,6 @@ Animated GIFs are from Giphy and follow their terms and conditions of use.
 - ✅ DOM updates in response to user interaction (e.g. showing/hiding an element, changing text or styles)
 
 **✋🏼 Personal criteria**
-- ✅ Single page
 - ✅ Accessible
 - ✅ Works on Smart Phones
 - ✅ Easy to read
@@ -198,7 +193,6 @@ Animated GIFs are from Giphy and follow their terms and conditions of use.
 - ✅ Tells a story with words and images
 - ✅ Playful and colourful design
 - ✅ Loads quickly
-
 
 ## 📚 What I learnt
 
