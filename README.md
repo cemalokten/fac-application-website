@@ -178,8 +178,6 @@ All images on the site are owned by myself or have a creative commons license wh
 
 Animated GIFs are from Giphy and follow their terms and conditions of use.
 
----
-
 ## 🔎 Brief Review
 
 **🌌 General criteria**
