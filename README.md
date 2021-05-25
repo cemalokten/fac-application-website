@@ -1,6 +1,8 @@
 ## 🌍 Project overview
 
-This read-me documents my application website for the Founders and Coders (FAC) 2021 Autumn Cohort. I designed it to full fill the requirements set by FAC. I also wanted to create a website from scratch using the HTML, CSS and JavaScript I have learnt over the past few months. It gave me an opportunity to put into words why I want to learn more about coding and a join the FAC Autumn cohort. 🍁
+This read-me documents my application website for the Founders and Coders (FAC) 2021 Autumn Cohort. I designed it to full fill the requirements set by FAC. 
+
+It gave me an opportunity to put into words why I want to learn more about coding and a join the FAC Autumn cohort. 🍁
 
 ## 📔 Contents
 
