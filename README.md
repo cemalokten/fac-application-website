@@ -125,8 +125,7 @@ The final deployed site includes:
 - Neutral grey background colour
 - Menu ☰ button and X to close
 - Larger text size and full screen navigation on mobile
-
-
+- Responsive type
 
 <img src="images/readme/deployed-site-desktop.jpg" alt="Screenshots of deployed website on desktop" width="600px">
 
@@ -231,6 +230,7 @@ Through the creation of this site I learnt the basics of the following:
 - Code alternative for `scrollIntoView()` to work with Safari
 - Use RGB values instead of colour names for a wider range of random colours
 - Pre-load images, maybe with Greeting words being a preload screen
+- Use retina images for higher-resolution displays
 - Include keyboard navigation
 - Make code DRY
 - Use less event listeners / combine them to increase performance
