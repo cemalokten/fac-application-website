@@ -2,9 +2,9 @@
 
 This read-me documents my application website for the Founders and Coders (FAC) 2021 Autumn Cohort. I designed it to full fill the requirements set by FAC. 
 
-It gave me an opportunity to put into words why I want to learn more about coding and a join the FAC Autumn cohort. 🍁
+It was an opportunity to put into words why I want to learn more about coding and a join the FAC Autumn cohort. 🍁
 
-Please note: the site works best on Firefox, Chrome or Edge. There are ongoing issues with Safari which I need to resolve.
+❗ Please note: the site works best on **Mozilla Firefox**, **Google Chrome** or **Microsoft Edge**. There are ongoing issues with **Safari** which I need to resolve. 🚧❗
 
 ## 📔 Contents
 
