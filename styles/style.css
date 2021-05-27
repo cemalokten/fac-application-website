@@ -94,6 +94,7 @@ footer {
 	padding-left: 6vw;
 	padding-right: 6vw;
 	pointer-events: none;
+	background: linear-gradient(0deg, #F8F8F8 30%, rgba(255, 255, 255, 0) 100%);
 }
 
 section {
@@ -133,8 +134,6 @@ a:hover {
 	-o-transition: color 0.3s ease-in-out;
 }
 
-
-
 #header--gradient {
 	position: fixed;	
 	z-index: 4;
@@ -143,6 +142,8 @@ a:hover {
 	height: 13vw;
 	width: 100vw;
 	pointer-events: none;
+
+	background: linear-gradient(180deg, #F8F8F8 30%, rgba(255, 255, 255, 0) 100%);
 }
 
 #header--menu--button {
@@ -368,3 +369,59 @@ img {
 	-o-transition: z-index 0.3s ease-in-out;
 }
 
+/* smartphones, iPhone, android, portrait phones */ 
+@media (max-width:420px)  { 
+
+html,
+body,
+main {
+	margin: 0;
+ 	scroll-behavior: smooth;
+	font-size: 4.4vw;
+	font-family: 'Lab Mono Web';
+	line-height: 7vw;
+
+}
+
+main {
+	padding-left: 6vw;
+	padding-right: 6vw;
+}
+
+section {
+	scroll-margin-top: 15px;
+}
+
+p {
+	z-index: 2;
+	margin-top: 6vw;
+	margin-bottom: 0;
+}
+
+nav {	
+	display: flex;
+	top: -100vh;
+	
+	flex-direction: column;	
+	justify-content: center;
+	row-gap: 5vh;
+	width: 100vw;
+	height: 100vh;
+}
+
+h2 {
+	 font-size: 4.4vw;
+}
+
+.greeting--word {
+	font-size: 6vw;
+}
+
+.screensaver--clock {
+	font-size: 6vw;
+}
+
+.link {
+	padding: 1.2vw 1.2vw;
+}
+}
