@@ -13,7 +13,7 @@ It was an opportunity to put into words why I want to learn more about coding an
 - [💡 Design  and development](#-design-and-development)
 - [🦺 Testing](#-testing)
 - [✔ Accessibility](#-accessibility)
-- [📷 Image usage rights](#-image-usage-rights)
+- [📷 Image and font licenses](#-image-and-font-licenses)
 - [🔎 Brief Review](#-brief-review)
 - [📚 What I learnt](#-what-i-learnt)
 - [⏳ Things I would change](#-things-i-would-change)
@@ -167,11 +167,13 @@ Things that could improve accessibility:
 - Include option to use keyboard navigation
 - Fix navigation in place
 
-## 📷 Image usage rights
+## 📷 Image and font licenses
 
-All images on the site are owned by myself or have a creative commons license which allows free use and distribution. 
+All images on the site are owned by myself or have a creative commons license which allows free use and distribution.
 
 Animated GIFs are from GIPHY and follow their terms and conditions of use.
+
+The font used throughout the site is 'Lab Mono' and is covered by the SIL Open Font License.
 
 ## 🔎 Brief review
 
