@@ -152,7 +152,7 @@ The site works well on Android, both Chrome and Firefox browsers. I have not had
 
 I tested it using Google Chrome Lighthouse and made the changes it suggested, below is an image of the results. 
 
-One of the factors effecting performance was the size of the animated GIFs. I wasn't able to reduce the size of animated GIFs as this would have meant hosting the files myself which is against Giphy's terms and conditions.
+One of the factors effecting performance was the size of the animated GIFs. I wasn't able to reduce the size of animated GIFs as this would have meant hosting the files myself which is against GIPHYS's terms and conditions.
 
 <img src="images/readme/google-lighthouse-results.png" alt="Google Chrome Lighthouse test results" width="400px">
 
@@ -172,7 +172,7 @@ Things that could improve accessibility:
 
 All images on the site are owned by myself or have a creative commons license which allows free use and distribution. 
 
-Animated GIFs are from Giphy and follow their terms and conditions of use.
+Animated GIFs are from GIPHY and follow their terms and conditions of use.
 
 ## 🔎 Brief Review
 
