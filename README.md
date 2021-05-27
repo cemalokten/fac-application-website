@@ -211,6 +211,7 @@ Through the creation of this site I learnt the basics of the following:
 - Storing elements in variables using `querySelector()` `querySelector()` and `getElementById` 
 - Timing events with `setTimeout()`, `setInterval()` and `clearTimeout()`
 - Bubbling events 
+- Events triggered by `scroll`, `click`, `mousemove`, `keydown`, `mouseover` and `mouseout`
 - Events triggered by page location using `getBoundingClientRect()`
 - Data attributes
 - Retrieving current time with `Date()` in different formats
