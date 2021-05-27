@@ -226,6 +226,7 @@ Through the creation of this site I learnt the basics of the following:
 - Clone, push and fetch from GitHub
 - How to test a website
 - Deploy a website on GitHub
+- How to write documentation using Markdown
 - I also learnt that I really love coding ❤
 
 ## ⏳ Things I would change
