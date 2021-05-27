@@ -4,6 +4,8 @@ This read-me documents my application website for the Founders and Coders (FAC) 
 
 It gave me an opportunity to put into words why I want to learn more about coding and a join the FAC Autumn cohort. 🍁
 
+Please note: the site works best on Firefox, Chrome or Edge. There are ongoing issues with Safari which I need to resolve.
+
 ## 📔 Contents
 
 - [⌚ Project Timeline](#-project-timeline)
@@ -124,6 +126,8 @@ The final deployed site includes:
 - Menu ☰ button and X to close
 - Larger text size and full screen navigation on mobile
 
+
+
 <img src="images/readme/deployed-site-desktop.jpg" alt="Screenshots of deployed website on desktop" width="600px">
 
 <img src="images/readme/deployed-site-mobile.jpg" alt="Screenshots of deployed website on mobile" width="600px">
@@ -203,6 +207,7 @@ Through the creation of this site I learnt the basics of the following:
 - Planning the layout and functions of a site
 - Organising and structuring code
 - Basics of commenting code
+- Storing elements in variables using `querySelector()` `querySelector()` and `getElementById` 
 - Timing events with `setTimeout()`, `setInterval()` and `clearTimeout()`
 - Bubbling events 
 - Events triggered by page location using `getBoundingClientRect()`
@@ -236,4 +241,4 @@ Through the creation of this site I learnt the basics of the following:
 - I am proud of myself and pleased to have been part of the application process
 - I am now even more motivated to learn to code
 - I would love to learn React and Node
-- I would like my next project to be something to help the world
+- I would like my next project to be something to help people
