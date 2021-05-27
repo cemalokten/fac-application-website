@@ -174,7 +174,7 @@ All images on the site are owned by myself or have a creative commons license wh
 
 Animated GIFs are from GIPHY and follow their terms and conditions of use.
 
-## 🔎 Brief Review
+## 🔎 Brief review
 
 **🌌 General criteria**
 - ✅ All code is written by you 
@@ -236,7 +236,7 @@ Through the creation of this site I learnt the basics of the following:
 - Use less event listeners / combine them to increase performance
 - More testing on different browsers and devices
 
-## 🚙 Reflections and What Next
+## 👀 Reflections
 
 - I am proud of myself and pleased to have been part of the application process
 - I am now even more motivated to learn to code
