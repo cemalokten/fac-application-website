@@ -154,7 +154,7 @@ I tested it using Google Chrome Lighthouse and made the changes it suggested, be
 
 One of the factors effecting performance was the size of the animated GIFs. I wasn't able to reduce the size of animated GIFs as this would have meant hosting the files myself which is against Giphy's terms and conditions.
 
-<img src="google-lighthouse-results.png" alt="Google Chrome Lighthouse test results" width="600px" style="border: 5px solid darkgreen; border-radius: 2vw;">
+<img src="images/readme/google-lighthouse-results.png" alt="Google Chrome Lighthouse test results" width="400px">
 
 ## ✔ Accessibility
 I have tried to design the website with accessibility in mind:
