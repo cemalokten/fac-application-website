@@ -1,4 +1,4 @@
-/* =============================================
+/* ===============================================================
  * Founders and Coders Application Javascript
  * Author:  Cemal Okten
  * Github: https://github.com/cemalokten/fac-application-website
@@ -12,15 +12,16 @@
  * 07 - Image hover
  * 08 - Links random colour
  * 09 - Wizard
-================================================ */
-
-'use strict';
+ * To-do: 
+ * 01 - Look for alternatvie to addListener for media-querys
+================================================================== */
 
 // 01 - Variable declarations
 
 const body = document.querySelector('body');
 const main = document.querySelector('main');
 const footer = document.querySelector('footer');
+const headerGradient = document.querySelector('#header--gradient')
 
 const pageTitle = document.querySelector('title');
 
@@ -55,7 +56,6 @@ const titleLinks = document.querySelectorAll('.section--title');
 const colourNames = [
 	'Aqua',
 	'Aquamarine',
-	'BlanchedAlmond',
 	'Blue',
 	'BlueViolet',
 	'Brown',
@@ -65,7 +65,6 @@ const colourNames = [
 	'Chocolate',
 	'Coral',
 	'CornflowerBlue',
-	'Cornsilk',
 	'Crimson',
 	'Cyan',
 	'DarkBlue',
@@ -291,7 +290,7 @@ function checkIfIdle() {
 function resetIdleTime() {
 	idleTime = 0;
 	hideScreensaver();
-	pageTitle.textContent = `Cemal Okten ✋🏼`;
+	pageTitle.textContent = `Cemal Okten 👋 FAC Application`;
 }
 
 // Execute checkIfIdle every 1 sec
@@ -353,7 +352,24 @@ window.addEventListener('scroll', scrollPosition);
 
 // 06 - Drop down and title navigation
 
-function menuLoad() {
+const mediaQuery = window.matchMedia("(max-width: 420px)")
+
+let navHeight = '-11vw';
+
+// Change variable from -11vw (Desktop Version) to mobile (-100vh)
+function screenSizeChange(e) {
+  if (e.matches) {
+	navHeight = '-100vh'
+  }
+}
+// Listen for screensize change
+// MDN says this is no longer recommended - !look for alternative!
+mediaQuery.addListener(screenSizeChange)
+
+// Add event object (media query) to screenSizeChange function
+screenSizeChange(mediaQuery);
+
+function menuLoad(height) {
 	// Display menu ☰ when section1 is visible
 	if (section1.getBoundingClientRect().top < 100) {
 		menu.style.opacity = 1;
@@ -362,7 +378,7 @@ function menuLoad() {
 		// Slide up(if open) and hide menu when greeting word is visible
 		menu.style.opacity = 0;
 		menu.style.visibility = 'hidden';
-		nav.style.top = '-11.6vw';
+		nav.style.top = height;
 		menu.textContent = '☰';
 	}
 }
@@ -405,7 +421,7 @@ scrollMenu();
 scrollTitles();
 
 document.addEventListener('scroll', function (e) {
-	menuLoad();
+	menuLoad(navHeight);
 });
 
 // Change menu (☰) into menu close (✕)
@@ -414,14 +430,14 @@ menu.addEventListener('click', function () {
 		nav.style.top = '0vw';
 		menu.textContent = '✕';
 	} else {
-		nav.style.top = '-11vw';
+		nav.style.top = navHeight;
 		menu.textContent = '☰';
 	}
 });
 
 // Click anywhere on the menu to close it
 nav.addEventListener('click', function () {
-	nav.style.top = '-11vw';
+	nav.style.top = navHeight;
 	menu.textContent = '☰';
 });
 
@@ -472,15 +488,27 @@ const wizard = document.getElementById('wizard');
 body.style.backgroundColor = '#F8F8F8';
 body.style.color = 'black';
 
-// Click to change the background colour and again to reset it
+// Click to change the background, gradient and nav colour and click again to reset it
 // Will reset to default after 10 secs
 let wizardTimeout;
 wizard.addEventListener('click', function () {
 	clearTimeout(wizardTimeout)
-	body.style.backgroundColor != 'rgb(248, 248, 248)'
-		? (body.style.backgroundColor = 'rgb(248, 248, 248)')
-		: (body.style.backgroundColor = randomColour());
-	wizardTimeout = setTimeout(() => body.style.backgroundColor = 'rgb(248, 248, 248)', 10000)
+	if (body.style.backgroundColor != 'rgb(248, 248, 248)') {
+		body.style.backgroundColor = 'rgb(248, 248, 248)';
+		footer.style.background = 'linear-gradient(0deg, #F8F8F8 30%, rgba(255, 255, 255, 0) 100%)';
+		headerGradient.style.background = 'linear-gradient(180deg, #F8F8F8 30%, rgba(255, 255, 255, 0) 100%)';
+		nav.style.backgroundColor = 'rgb(248, 248, 248)';
+	} else {
+		const colour = randomColour();
+		body.style.backgroundColor = colour;
+		footer.style.background = `linear-gradient(0deg, ${colour} 30%, rgba(255, 255, 255, 0) 100%)`;
+		headerGradient.style.background = `linear-gradient(180deg, ${colour} 30%, rgba(255, 255, 255, 0) 100%)`;
+		nav.style.backgroundColor = colour;
+	};
+	wizardTimeout = setTimeout(() => {
+		body.style.backgroundColor = 'rgb(248, 248, 248)'
+		footer.style.background = 'linear-gradient(0deg, #F8F8F8 30%, rgba(255, 255, 255, 0) 100%)';
+		headerGradient.style.background = 'linear-gradient(180deg, #F8F8F8 30%, rgba(255, 255, 255, 0) 100%)';
+		nav.style.backgroundColor = 'rgb(248, 248, 248)';
+	}, 10000)
 });
-
-
