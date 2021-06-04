@@ -324,7 +324,7 @@ function scrollPosition(event) {
 	muliplied by 100 to get number between 0 - 100 */
 	let scrollPercentage = (currDistanceFromTop / totalPageHeight) * 100;
 	// Update HTML with percentage scrolled
-	position.textContent = `${Math.floor(scrollPercentage)}%`;
+	position.textContent = `${Math.floor(scrollPercentage)}%`; //could have used math.ciel or math.round - same result
 	// Make visible while scrolling
 	position.style.opacity = '1';
 	// Remove animated hand while not at bottom of page
@@ -479,7 +479,7 @@ links.forEach((val) => (val.style.borderColor = randomColour()));
 navListLinks.forEach((link, i) => {
 	let colour = link.style.borderColor;
 	titleLinks.item(i).style.borderColor = colour;
-	titleLinks.item(4).style.borderColor = randomColour();
+	titleLinks.item(4).style.borderColor = randomColour(); //item is like array[] item 4 is other so not on menu
 });
 
 // 09 - Wizard
